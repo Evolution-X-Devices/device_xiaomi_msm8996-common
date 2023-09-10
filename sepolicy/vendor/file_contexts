@@ -28,10 +28,12 @@
 /sys/module/cnss_common/parameters/bdwlan_file                                  u:object_r:sysfs_cnss_common:s0
 
 # Data files
+/data/vendor/dolby(/.*)?                      u:object_r:vendor_data_file:s0
 /data/fpc(/.*)?                       u:object_r:fpc_data_file:s0
 /data/camera(/.*)?                    u:object_r:camera_socket:s0
 /data/decrypt\.txt                    u:object_r:thermal_data_file:s0
 /data/vendor/misc/audio/acdbdata/delta(/.*)?       u:object_r:acdbdelta_vendor_data_file:s0
+/vendor/bin/hw/vendor\.dolby\.hardware\.dms@2\.0-service                                                u:object_r:hal_dms_default_exec:s0
 
 # Persist files
 /(mnt/vendor)/persist/audio/us_cal                 u:object_r:persist_usf_cal_file:s0

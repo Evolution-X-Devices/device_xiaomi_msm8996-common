@@ -244,6 +244,24 @@ vendor/etc/init/cnd.rc|ff205cff8e00ec6805fd1e19f3ca6ff86700cbb6
 -vendor/lib64/vendor.qti.ims.rcsconfig@1.0.so;DISABLE_DEPS;MODULE_SUFFIX=_vendor|ba5ffc588422c1b0f3ac8135314db2c88d62671e
 -vendor/lib64/vendor.qti.latency@2.0.so;DISABLE_DEPS|0144eec541989f450695ec8cbdd595df4009fe1a
 
+# Dolby
+vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service
+vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc
+vendor/etc/media_codecs_dolby_audio.xml
+vendor/etc/vintf/manifest/manifest_vendor.dolby.hardware.dms.xml
+vendor/lib/libdapparamstorage.so
+vendor/lib/libdeccfg.so
+vendor/lib/libstagefright_soft_ac4dec.so
+vendor/lib/libstagefright_soft_ddpdec.so
+vendor/lib/soundfx/libhwdap.so
+vendor/lib/soundfx/libswgamedap.so
+vendor/lib/soundfx/libswvqe.so
+vendor/lib/vendor.dolby.hardware.dms@2.0.so
+vendor/lib64/libdapparamstorage.so
+vendor/lib64/libdlbdsservice.so
+vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so
+vendor/lib64/vendor.dolby.hardware.dms@2.0.so
+
 # DPM - from daisy - QKQ1.191002.002
 -product/bin/dpmd:system_ext/bin/dpmd;DISABLE_DEPS|cac8f3eadeeec202f56d5b5f7a8c75e82e376d9f
 product/etc/dpm/dpm.conf:system_ext/etc/dpm/dpm.conf|95e27da8c989e96c6faea6f0697bce11955b62a5
