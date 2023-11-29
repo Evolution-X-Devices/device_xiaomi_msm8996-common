@@ -311,7 +311,8 @@ PRODUCT_PACKAGES += \
     libOmxCore \
     libOmxVdec \
     libOmxVenc \
-    libstagefrighthw
+    libstagefrighthw \
+    libstagefright_foundation-v33
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true

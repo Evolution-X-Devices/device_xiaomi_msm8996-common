@@ -67,6 +67,9 @@ function blob_fixup() {
     vendor/lib/libchromaflash.so|vendor/lib/libmmcamera_hdr_gb_lib.so|vendor/lib/libmorpho_easy_hdr.so|vendor/lib/libmorpho_hdr_checker.so|vendor/lib/libmorpho_image_stab4.so|vendor/lib/libmpbase.so|vendor/lib/liboptizoom.so|vendor/lib/libseemore.so|vendor/lib/libubifocus.so)
         "${PATCHELF}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${2}"
         ;;
+    vendor/lib64/libdlbdsservice.so|vendor/lib/libstagefright_soft_ac4dec.so|vendor/lib/libstagefright_soft_ddpdec.so)
+        "${PATCHELF}" --replace-needed "libstagefright_foundation.so" "libstagefright_foundation-v33.so" "${2}"
+        ;;
     vendor/lib64/libwvhidl.so|vendor/lib64/mediadrm/libwvdrmengine.so)
         grep -q libcrypto_shim.so "${2}" || "${PATCHELF}" --add-needed "libcrypto_shim.so" "${2}"
         ;;
