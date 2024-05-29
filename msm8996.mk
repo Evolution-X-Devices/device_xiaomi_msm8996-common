@@ -171,6 +171,7 @@ PRODUCT_PACKAGES += \
 
 # Device settings
 PRODUCT_PACKAGES += \
+    XiaomiDolby \
     XiaomiParts
 
 # Display
