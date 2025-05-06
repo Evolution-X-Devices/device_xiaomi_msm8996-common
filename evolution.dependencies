@@ -1,0 +1,14 @@
+[
+  {
+    "repository": "hardware_xiaomi",
+    "target_path": "hardware/xiaomi"
+  },
+  {
+    "repository": "kernel_xiaomi_msm8996",
+    "target_path": "kernel/xiaomi/msm8996"
+  },
+  {
+    "repository": "vendor_xiaomi_msm8996-common",
+    "target_path": "vendor/xiaomi/msm8996-common"
+  }
+]
